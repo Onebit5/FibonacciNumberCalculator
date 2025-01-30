@@ -71,7 +71,7 @@ This repository contains three C programs (`fibFirstTry.c`, `fibSecondTry.c`, an
 1. Define a function `matrix_multiply` to multiply two 2x2 matrices.
 2. Define a function `matrix_power` to compute the power of a matrix using exponentiation by squaring.
 3. Use the `matrix_power` function to compute the Fibonacci matrix raised to the power of \(n-1\).
-4. Define a function `estimate_max_n` to estimate the largest \(n\) such that \(F(n) \leq \text{ULLONG_MAX}\) using Binet's formula.
+4. Define a function `estimate_max_n` to estimate the largest using Binet's formula.
 5. Compute Fibonacci numbers around the estimated \(n\) to find the largest one that fits in `unsigned long long`.
 
 ### **Why It Can't Compute Larger Fibonacci Numbers**
@@ -92,9 +92,9 @@ This repository contains three C programs (`fibFirstTry.c`, `fibSecondTry.c`, an
 
 ## **Why `fibThirdTry.c` Can't Compute Larger Fibonacci Numbers**
 
-The `fibThirdTry.c` program is designed to compute the largest Fibonacci number that fits in the `unsigned long long` data type. The limit is imposed by the maximum value that `unsigned long long` can hold, which is \(2^{64} - 1\). Specifically:
+The `fibThirdTry.c` program is designed to compute the largest Fibonacci number that fits in the `unsigned long long` data type. The limit is imposed by the maximum value that `unsigned long long` can hold, which is 2^64 - 1. Specifically:
 - The largest Fibonacci number that fits in `unsigned long long` is \(F(93) = 1293530146158671551\).
-- The next Fibonacci number, \(F(94) = 18446744073709551615\), exceeds \(2^{64} - 1\), causing an overflow.
+- The next Fibonacci number, \(F(94) = 18446744073709551615\), exceeds 2^64 - 1, causing an overflow.
 
 Thus, the program stops at \(F(93)\) and cannot compute larger Fibonacci numbers without using a different data type or arbitrary-precision arithmetic.
 
