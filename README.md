@@ -1,4 +1,4 @@
-# Fibonacci Number Computation: README
+# Fibonacci Number Computation
 
 This repository contains three C programs (`fibFirstTry.c`, `fibSecondTry.c`, and `fibThirdTry.c`) that compute Fibonacci numbers using different techniques. Each program demonstrates a unique approach to solving the problem, with increasing complexity and efficiency. Below is an explanation of the techniques used, how they work, and why the third program (`fibThirdTry.c`) cannot compute Fibonacci numbers beyond a certain limit.
 
